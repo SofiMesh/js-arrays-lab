@@ -59,6 +59,9 @@ Exercise 6:
 
 // Complete Exercise 6 below...
 
+foods.splice(1, 1, 'sushi', 'cupcake');
+
+console.log('Exercise 6 Result:\n', foods);
 
 /*
 Exercise 7:
