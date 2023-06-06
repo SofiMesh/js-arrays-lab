@@ -70,7 +70,9 @@ Exercise 7:
 */
 
 // Complete Exercise 7 below...
+foods.slice("suhi", "cupcake")
 
+const yummy = ["sushi", "cupcake"]
 
 console.log('Exercise 7 Result:\n', yummy);
 
