@@ -37,6 +37,7 @@ Exercise 4:
 
 // Complete Exercise 4 below...
 
+foods[1] = 'favFood'
 
 console.log('Exercise 4 Result:\n', favFood);
 
