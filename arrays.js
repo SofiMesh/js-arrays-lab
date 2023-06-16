@@ -7,7 +7,7 @@ Exercise 1:
 
 const foods = [];
 
-console.log('Exercise 1 Result:\n', foods);
+console.log('Exercise 1 Result:\n', coods);
 
 /*
 Exercise 2:
@@ -37,7 +37,7 @@ Exercise 4:
 
 // Complete Exercise 4 below...
 
-foods[1] = 'favFood'
+let favFood = foods[1]
 
 console.log('Exercise 4 Result:\n', favFood);
 
@@ -82,7 +82,7 @@ Exercise 8:
 */
 
 // Complete Exercise 8 below...
-let soyIdx = food.indexOf('tofu')
+let soyIdx = foods.indexOf('tofu')
 
 console.log('Exercise 8 Result:\n', soyIdx);
 
@@ -94,7 +94,7 @@ Exercise 9:
 
 // Complete Exercise 9 below...
 
-
+let allFood = foods.join('  ' )
 
 console.log('Exercise 9 Result:\n', allFoods);
 
@@ -105,6 +105,7 @@ Exercise 10:
 
 // Complete Exercise 10 below...
 
+hasSoup = false;
 
 console.log('Exercise 10 Result:\n', hasSoup);
 
@@ -118,7 +119,10 @@ const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
 
 // Complete Exercise 11 below...
 
-
+const odds = [];
+nums.forEach(function(num) {
+  if (num % 2) odds.push(num);
+});
 
 console.log('Exercise 11 Result:\n', odds);
 
@@ -131,7 +135,16 @@ Exercise 12:
 */
 
 // Complete Exercise 12 below...
-
+const fizz = [], buzz =[], fizzbuzz =[];
+nums.forEach(function(num){
+  if (num % 3 && 5 === 0) {
+    fizzbuzz.push(num);
+  } else if (num % 3 === 0) {
+    fizz.push(num);
+  } else if (num % 5 === 0) {
+    buzz.push(num);
+  }
+});
 
 
 console.log('Exercise 12 Results:');
@@ -154,7 +167,7 @@ const numArrays = [
 
 // Complete Exercise 13 below...
 
-
+const numList = numArrays[numArrays.length -1];
 
 console.log('Exercise 13 Result:\n', numList);
 
@@ -165,7 +178,8 @@ Exercise 14:
 
 // Complete Exercise 14 below...
 
-
+let num = numArrays[2][1]
+console.log(num)
 
 console.log('Exercise 14 Result:\n', num);
 
@@ -177,6 +191,11 @@ Exercise 15:
 
 // Complete Exercise 15 below...
 
-
+const total = 0;
+numArrays.forEach(function(numArray) {
+  numArrays.forEach(function(numArray) {
+    total += num;
+  });
+});
 
 console.log('Exercise 15 Result:\n', total);
